@@ -4,7 +4,13 @@
 * {
     margin: 0;
     font-family: 'SF Pro Display';
-    color: $secondary-color;
+}
+
+body {
+    min-width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 @font-face{
@@ -13,8 +19,8 @@
 }
 
 .background {
-  background: url(./assets/background.png) no-repeat;
-  min-height: 900px;
+  background: url(../assets/background.png) no-repeat;
+  max-height: 900px;
 }
 
 header {
@@ -29,14 +35,16 @@ header {
         list-style: none;
         display: flex;
         flex-direction: row;
-        gap: $spacing-lg;
+        gap:$spacing-lg;
         padding-top: $spacing-lg;
 
         a {
             text-decoration: none;
+            white-space: nowrap;
             font-family: $secondary-font;
             font-weight: $secondary-bold;
             font-size: $secondary-size;
+            color: $secondary-color;
 
                 &:hover {
                     text-decoration: underline;
@@ -47,7 +55,7 @@ header {
     }
 
     .phone-contact {
-        padding-left: 266px;
+        padding-left: 190px;
     }
 }
 
@@ -58,6 +66,7 @@ header {
 
         &__title {
             padding: 163px 162px 304px 50px;
+            color: $secondary-color;
 
                 h1 {
                     font-size: 67px;
@@ -65,6 +74,7 @@ header {
                 }
 
                 p {
+                    white-space: nowrap;
                     font-family: $secondary-font;
                     font-weight: $secondary-bold;
                     font-size: $secondary-size;
@@ -96,8 +106,70 @@ header {
 
     img {
         padding-top: 92px;
+        padding-right: 0px;
         max-width: 803px;
         max-height: 436px;
     }
 }
 
+.cards-workers {
+    min-height: 584px;
+    min-width: 1200px;
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: $spacing-sm;
+        margin: -82px 50px 100px 50px;
+
+    .card {
+        width: 430px;
+        height: 616px;
+        background-color: $secondary-color;
+        box-shadow: 0px 0px 40px rgba(47, 128, 237, 0.15);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+
+            img {
+                width: 200px;
+                height: 200px;
+                padding: 50px 118px 30px 112px;
+            }
+            h3 {
+                font-weight: $primary-font;
+                font-size: $primary-size;
+                text-align: center;
+                color: $heading-color;
+                .yellow {
+                    color: $button-color;
+                }
+            }
+            p {
+                font-family: $secondary-font;
+                font-weight: $secondary-bold;
+                font-size: $secondary-size;
+                line-height: 20px;
+                text-align: center;
+                color: $heading-color;
+                padding: 20px $spacing-lg $spacing-md $spacing-lg;
+            }
+            button {
+                @include button($primary-color, $additional-color);
+                margin-left: 135px;
+                transition: all 0.2s ease-in;
+                cursor: pointer;
+                &:hover {
+                    @include button($button-color, $info-color);
+                }
+            }
+          
+              &:hover {
+                transform: translateY(-50px);
+              }
+                }
+    }
+}
