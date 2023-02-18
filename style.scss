@@ -1,0 +1,103 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    margin: 0;
+    font-family: 'SF Pro Display';
+    color: $secondary-color;
+}
+
+@font-face{
+    font-family: 'SF Pro Display';
+    src: url('#{$font-path}SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
+}
+
+.background {
+  background: url(./assets/background.png) no-repeat;
+  min-height: 900px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        padding: 55px 79px 0px 50px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: $spacing-lg;
+        padding-top: $spacing-lg;
+
+        a {
+            text-decoration: none;
+            font-family: $secondary-font;
+            font-weight: $secondary-bold;
+            font-size: $secondary-size;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $button-color;
+                }
+        }
+        
+    }
+
+    .phone-contact {
+        padding-left: 266px;
+    }
+}
+
+.heading-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+        &__title {
+            padding: 163px 162px 304px 50px;
+
+                h1 {
+                    font-size: 67px;
+                    padding-bottom: $spacing-xs;
+                }
+
+                p {
+                    font-family: $secondary-font;
+                    font-weight: $secondary-bold;
+                    font-size: $secondary-size;
+                    padding-bottom: $spacing-md;
+                }
+        }
+
+        .help-buttons {
+            display: flex;
+            gap: 15px;
+
+                button:first-of-type {
+                    @include button($button-color, $info-color);
+                    transition: all 0.2s ease-in;
+                        &:hover {
+                            cursor: pointer;
+                            @include button(none, $button-color);
+                        }
+                }
+                button:nth-of-type(2) {
+                    @include button(none, $button-color);
+                    transition: all 0.2s ease-in;
+                        &:hover {
+                            cursor: pointer;
+                            @include button($button-color, $info-color);
+                    }
+                }
+        }
+
+    img {
+        padding-top: 92px;
+        max-width: 803px;
+        max-height: 436px;
+    }
+}
+

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  font-family: "SF Pro Display";
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFPRODISPLAYBLACKITALIC.OTF") format("opentype");
+}
+.background {
+  background: url(./assets/background.png) no-repeat;
+  min-height: 900px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+header img {
+  padding: 55px 79px 0px 50px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-top: 50px;
+}
+header ul a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+header ul a:hover {
+  text-decoration: underline;
+  color: #F2C94C;
+}
+header .phone-contact {
+  padding-left: 266px;
+}
+
+.heading-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.heading-services__title {
+  padding: 163px 162px 304px 50px;
+}
+.heading-services__title h1 {
+  font-size: 67px;
+  padding-bottom: 15px;
+}
+.heading-services__title p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+.heading-services .help-buttons {
+  display: flex;
+  gap: 15px;
+}
+.heading-services .help-buttons button:first-of-type {
+  width: 160px;
+  height: 50px;
+  background: #F2C94C;
+  color: #333333;
+  border-radius: 40px;
+  border-style: none;
+  transition: all 0.2s ease-in;
+}
+.heading-services .help-buttons button:first-of-type:hover {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  background: none;
+  color: #F2C94C;
+  border-radius: 40px;
+  border-style: none;
+}
+.heading-services .help-buttons button:nth-of-type(2) {
+  width: 160px;
+  height: 50px;
+  background: none;
+  color: #F2C94C;
+  border-radius: 40px;
+  border-style: none;
+  transition: all 0.2s ease-in;
+}
+.heading-services .help-buttons button:nth-of-type(2):hover {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  background: #F2C94C;
+  color: #333333;
+  border-radius: 40px;
+  border-style: none;
+}
+.heading-services img {
+  padding-top: 92px;
+  max-width: 803px;
+  max-height: 436px;
+}/*# sourceMappingURL=style.css.map */
