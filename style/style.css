@@ -19,6 +19,18 @@ body {
   max-height: 900px;
 }
 
+h2 {
+  color: #95B2D8;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+
+.yellow {
+  color: #F2C94C;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -144,7 +156,7 @@ header .phone-contact {
   padding: 50px 118px 30px 112px;
 }
 .cards-workers .cards .card h3 {
-  font-weight: "SF Pro Display";
+  font-weight: "SF Pro Display", sans-serif;
   font-size: 36px;
   text-align: center;
   color: #4F4F4F;
@@ -182,4 +194,152 @@ header .phone-contact {
 }
 .cards-workers .cards .card:hover {
   transform: translateY(-50px);
+}
+
+.description {
+  background: url(../assets/background2.png) no-repeat;
+  height: 659px;
+}
+.description__heading {
+  padding-top: 50px;
+}
+.description__heading p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #4F4F4F;
+}
+.description__main {
+  display: flex;
+  gap: 50px;
+}
+.description__main .image {
+  margin-top: 50px;
+}
+.description__main .text {
+  width: 710px;
+  height: 398px;
+  padding-top: 84px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+.description__main .text .paragraph1 {
+  grid-area: 1/1/2/2;
+}
+.description__main .text .paragraph2 {
+  grid-area: 1/2/2/3;
+}
+.description__main .text .paragraph3 {
+  grid-area: 2/1/3/2;
+}
+.description__main .text .paragraph4 {
+  grid-area: 2/2/3/3;
+}
+.description__main .text img {
+  width: 24px;
+  height: 24px;
+}
+.description__main .text p {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+}
+.description__main .text .button1 button {
+  width: 160px;
+  height: 50px;
+  background: #F2C94C;
+  color: #333333;
+  border-radius: 40px;
+  border-style: none;
+  transition: all 0.2s ease-in;
+}
+.description__main .text .button1 button:hover {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  background: none;
+  color: #95B2D8;
+  border-radius: 40px;
+  border-style: none;
+}
+.description__main .text .button2 button {
+  width: 160px;
+  height: 50px;
+  background: none;
+  color: #95B2D8;
+  border-radius: 40px;
+  border-style: none;
+  transition: all 0.2s ease-in;
+}
+.description__main .text .button2 button:hover {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  background: #F2C94C;
+  color: #333333;
+  border-radius: 40px;
+  border-style: none;
+}
+.description__main .text .buttons {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.services {
+  height: 696px;
+}
+.services .working-types {
+  width: 199px;
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 61px;
+  grid-row-gap: 0px;
+}
+.services .working-types p {
+  padding-top: 20px;
+  text-align: center;
+}
+.services .type1 {
+  grid-area: 1/1/2/2;
+}
+.services .type2 {
+  grid-area: 1/2/2/3;
+}
+.services .type3 {
+  grid-area: 1/3/2/4;
+}
+.services .type4 {
+  grid-area: 1/4/2/5;
+}
+.services .type5 {
+  grid-area: 1/5/2/6;
+}
+
+footer {
+  background-color: #F0F6FE;
+}
+footer .contact-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .contact-information .contact {
+  background: url(../assets/background-footer.png) no-repeat;
+  width: 801px;
+  height: 400px;
+}
+footer .contact-information .contact h1 {
+  text-align: end;
+  padding: 164px 50px;
+  color: #FFFFFF;
+  font-size: 61px;
+  line-height: 72.28px;
 }/*# sourceMappingURL=style.css.map */

@@ -23,6 +23,18 @@ body {
   max-height: 900px;
 }
 
+h2 {
+    color: $additional-color;
+    font-family: $primary-font;
+    font-weight: $primary-bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+.yellow {
+    color: $button-color;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -171,5 +183,140 @@ header {
                 transform: translateY(-50px);
               }
                 }
+    }
+}
+
+.description {
+    background: url(../assets/background2.png) no-repeat;
+    height: 659px;
+
+    &__heading {
+            padding-top: 50px;
+        p {
+            font-family: $secondary-font;
+            font-size: $secondary-size;
+            line-height: 20px;
+            text-align: center;
+            color: $heading-color;
+        }
+    }
+
+    &__main {
+        display: flex;
+        gap: $spacing-lg;
+
+        .image {
+            margin-top: $spacing-lg;
+        }
+
+        .text {
+            width: 710px;
+            height: 398px;
+            padding-top: 84px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 40px;
+            grid-row-gap: 20px;
+          
+            .paragraph1 {
+              grid-area: 1 / 1 / 2 / 2; 
+            }
+            .paragraph2 {
+              grid-area: 1 / 2 / 2 / 3; 
+            }
+            .paragraph3 {
+              grid-area: 2 / 1 / 3 / 2;
+            }
+            .paragraph4 {
+              grid-area: 2 / 2 / 3 / 3;
+            }
+          
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          
+            p {
+              font-family: $secondary-font !important;
+              font-size: $secondary-size;
+              line-height: 20px;
+              color: $heading-color;
+            }
+          
+            .button1 button {
+              @include button($button-color, $info-color);
+              transition: all 0.2s ease-in;
+              &:hover {
+                cursor: pointer;
+                @include button(none, $additional-color);
+              }
+            }
+            
+            .button2 button {
+              @include button(none, $additional-color);
+              transition: all 0.2s ease-in;
+              &:hover {
+                cursor: pointer;
+                @include button($button-color, $info-color);
+              }
+            }
+          
+            .buttons {
+                display: flex;
+                gap: $spacing-xs;
+                padding-top: 20px;
+              }
+          }            
+    }
+}
+
+.services {
+    height: 696px;
+
+    .working-types {
+        width: 199px;
+        padding: $spacing-lg 100px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 61px;
+        grid-row-gap: 0px;
+
+        p {
+            padding-top: 20px;
+            text-align: center;
+        }
+        }
+        
+        .type1 { grid-area: 1 / 1 / 2 / 2; }
+        .type2 { grid-area: 1 / 2 / 2 / 3; }
+        .type3 { grid-area: 1 / 3 / 2 / 4; }
+        .type4 { grid-area: 1 / 4 / 2 / 5; }
+        .type5 { grid-area: 1 / 5 / 2 / 6; }
+}
+
+footer {
+    background-color: $primary-color;
+
+    .contact-information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        .contact {
+            background: url(../assets/background-footer.png) no-repeat;
+            width: 801px;
+            height: 400px;
+
+            h1 {
+                text-align: end;
+                padding: 164px $spacing-lg;
+                color: $secondary-color;
+                font-size: 61px;
+                line-height: 72.28px;
+            }
+        }
     }
 }
