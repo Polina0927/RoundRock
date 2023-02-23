@@ -149,9 +149,22 @@
     <footer>
         <div class="contact-information">
             <div class="contact-form">
-                <form action="">
-                    <p>Form</p>
-                </form>
+                <form action="/submit-form" method="post">
+                    <div>
+                      <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div>
+                      <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                    </div>
+                    <div>
+                      <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div>
+                      <textarea id="message" name="message" rows="4" cols="50" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
+                  
             </div>
 
         <div class="contact">

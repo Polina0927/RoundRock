@@ -331,10 +331,69 @@ footer .contact-information {
   flex-direction: row;
   justify-content: space-between;
 }
+footer .contact-information .contact-form {
+  margin: 40px 100px;
+}
+footer .contact-information .contact-form input {
+  border: none;
+  border-radius: 6px;
+  width: 470px;
+  height: 22px;
+  resize: none;
+  margin: 10px 0px;
+  padding: 14px 16px;
+}
+footer .contact-information .contact-form input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #4F4F4F 0.1;
+}
+footer .contact-information .contact-form input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #4F4F4F 0.1;
+}
+footer .contact-information .contact-form textarea {
+  border: none;
+  border-radius: 6px;
+  width: 470px;
+  height: 42px;
+  resize: none;
+  padding: 14px 16px;
+  margin: 10px 0px;
+}
+footer .contact-information .contact-form textarea::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #4F4F4F 0.1;
+}
+footer .contact-information .contact-form textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #4F4F4F 0.1;
+}
+footer .contact-information .contact-form button {
+  width: 160px;
+  height: 50px;
+  background: #F2C94C;
+  color: #333333;
+  border-radius: 40px;
+  border-style: none;
+  transition: all 0.2s ease-in;
+}
+footer .contact-information .contact-form button:hover {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  background: none;
+  color: #95B2D8;
+  border-radius: 40px;
+  border-style: none;
+}
 footer .contact-information .contact {
   background: url(../assets/background-footer.png) no-repeat;
+  background-size: 801px 430px;
   width: 801px;
-  height: 400px;
 }
 footer .contact-information .contact h1 {
   text-align: end;

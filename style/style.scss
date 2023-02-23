@@ -304,11 +304,53 @@ footer {
         flex-direction: row;
         justify-content: space-between;
 
+        .contact-form {
+            margin: 40px 100px;
+            input {
+                border: none;
+                border-radius: 6px;
+                width: 470px;
+                height: 22px;
+                resize: none;
+                margin: 10px 0px;
+                padding: 14px 16px;
+                &::placeholder {
+                    font-family: $secondary-font;
+                    font-size: $secondary-size;
+                    color: $heading-color 0.1;
+                }
+            }
+
+            textarea {
+                border: none;
+                border-radius: 6px;
+                width: 470px;
+                height: 42px;
+                resize: none;
+                padding: 14px 16px;
+                margin: 10px 0px;
+                &::placeholder {
+                    font-family: $secondary-font;
+                    font-size: $secondary-size;
+                    color: $heading-color 0.1;
+                }
+                }
+
+                button {
+                    @include button($button-color, $info-color);
+                    transition: all 0.2s ease-in;
+                        &:hover {
+                            cursor: pointer;
+                            @include button(none, $additional-color);
+                        }
+                }
+        }
+
 
         .contact {
             background: url(../assets/background-footer.png) no-repeat;
+            background-size: 801px 430px;
             width: 801px;
-            height: 400px;
 
             h1 {
                 text-align: end;
